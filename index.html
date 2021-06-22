@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./main.css" />
+        <link rel="stylesheet" href="./common.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="cover centering">
+                <div class="calcul">
+                    <div class="calcul_header">
+                        <div class="calcul_header_first_num">
+                            <span
+                                class="calcul_header_first_num_span"
+                                id="first_num_span"
+                            ></span>
+                        </div>
+                        <div class="calcul_header_first_sign">
+                            <span
+                                class="calcul_header_first_sign_span"
+                                id="sign_span"
+                            ></span>
+                        </div>
+                        <div class="calcul_header_second_num">
+                            <p
+                                class="calcul_header_second_num_input"
+                                id="input"
+                            >
+                                0
+                            </p>
+                        </div>
+                    </div>
+                    <div class="calcul_body">
+                        <div
+                            class="calcul_body_button"
+                            id="clear"
+                            onclick="clearInput()"
+                        >
+                            <span>C</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="switching"
+                            onclick="backInput()"
+                        >
+                            <span><-</span>
+                        </div>
+                        <div class="calcul_body_button" id="factorial">
+                            <span>x!</span>
+                        </div>
+                        <div class="calcul_body_button" id="root">
+                            <span class="math_signs" onclick="calculate('root')"
+                                >&#8730;x</span
+                            >
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(1)"
+                        >
+                            <span>1</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(2)"
+                        >
+                            <span class="calcul_body_button_span">2</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(3)"
+                        >
+                            <span>3</span>
+                        </div>
+                        <div class="calcul_body_button">
+                            <span
+                                class="math_signs"
+                                onclick="calculate('multiply')"
+                                id="multiple"
+                                >&#215;</span
+                            >
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(4)"
+                        >
+                            <span>4</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(5)"
+                        >
+                            <span>5</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(6)"
+                        >
+                            <span>6</span>
+                        </div>
+                        <div class="calcul_body_button">
+                            <span
+                                class="math_signs"
+                                onclick="calculate('minus')"
+                                id="minus"
+                                >-</span
+                            >
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(7)"
+                        >
+                            <span>7</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(8)"
+                        >
+                            <span>8</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput(9)"
+                        >
+                            <span>9</span>
+                        </div>
+                        <div class="calcul_body_button">
+                            <span
+                                class="math_signs"
+                                onclick="calculate('plus')"
+                                id="plus"
+                                >+</span
+                            >
+                        </div>
+                        <div
+                            class="calcul_body_button calcul_body_button_equal"
+                            id="nomer"
+                            onclick="getInput(0)"
+                        >
+                            <span>0</span>
+                        </div>
+                        <div
+                            class="calcul_body_button"
+                            id="nomer"
+                            onclick="getInput('.')"
+                        >
+                            <span>.</span>
+                        </div>
+                        <div class="calcul_body_button" id="equal">
+                            <span class="math_signs" onclick="summarize()"
+                                >=</span
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
